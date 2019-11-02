@@ -971,3 +971,25 @@ span ~ .panel-header-text {
 .amo-rate-cta {
   background: #0f1126;
 }
+
+
+/* add this style  */
+#tooltiptext {
+  visibility: hidden;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1000;
+  left: 5px;
+
+}
+.tooltiptext{
+  font-size:100px;
+}
+
+#current-tab:hover #tooltiptext {
+  visibility: visible;
+}
+
