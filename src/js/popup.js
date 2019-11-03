@@ -601,7 +601,7 @@ Logic.registerPanel(P_CONTAINERS_LIST, {
     const assignmentCheckboxElement = document.getElementById("container-page-assigned");
     const currentTabUserContextId = Logic.userContextId(currentTab.cookieStoreId);
 
-    // add this line 
+    // added this line 
     const tooltiptext = document.getElementById("tooltiptext");
     
     assignmentCheckboxElement.addEventListener("change", () => {
@@ -616,7 +616,7 @@ Logic.registerPanel(P_CONTAINERS_LIST, {
       const currentPage = document.getElementById("current-page");
       currentPage.innerHTML = escaped`<span class="page-title truncate-text">${currentTab.title}</span>`;
 
-      // add this line
+      // added this line
       tooltiptext.innerHTML = escaped`<span class="page-title truncate-tex" style="font-size:15px">${currentTab.title}</span>`;
       
       const favIconElement = Utils.createFavIconElement(currentTab.favIconUrl || "");
